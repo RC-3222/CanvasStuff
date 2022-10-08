@@ -1,0 +1,72 @@
+$clr-flame-orange: hsl(20,90%,53%);
+$clr-flame-orange-shadow: hsla(20,90%,53%, 0.5);
+$clr-flame-yellow: hsl(60,90%,51%);
+
+.button {
+  flex-shrink: 0;
+  width: min(80%, 8em);
+
+  font-size: min(1.5rem, 6vw);
+
+  padding: 1em 1.5em;
+
+
+  color: #fff;
+  border: 0.2em solid #fff;
+  background: transparent;
+  border-radius: 3.5em;
+  transition: all 500ms ease-in-out;
+
+  position: relative;
+  isolation: isolate;
+
+  &:hover {
+    color: $clr-flame-orange;
+    text-shadow: 5px 5px 5px $clr-flame-orange-shadow,-5px -5px 5px $clr-flame-orange-shadow,
+    -5px 5px 5px $clr-flame-orange-shadow,5px -5px 5px $clr-flame-orange-shadow;
+    border: 0.2em solid $clr-flame-orange;
+    background-color: $clr-flame-orange;
+    box-shadow: 5px 5px 15px $clr-flame-orange-shadow, -5px -5px 15px $clr-flame-orange-shadow,
+    -5px 5px 15px $clr-flame-orange-shadow,5px -5px 15px $clr-flame-orange-shadow;
+    &:before {
+      box-shadow: inset 5px 5px 15px $clr-flame-orange-shadow, inset -5px -5px 15px $clr-flame-orange-shadow,
+      inset -5px 5px 15px $clr-flame-orange-shadow,inset 5px -5px 15px $clr-flame-orange-shadow;
+      background-color: $clr-flame-yellow;
+    }
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 3.5em;
+    transition: all 500ms ease-in-out;
+  }
+
+
+  &-container {
+    border: 1rem solid #fff;
+    border-radius: 1rem;
+
+    width: 80%;
+    min-height: 40%;
+    padding: 2rem;
+
+    position: relative;
+    //z-index: 1;
+    //isolation: isolate;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}

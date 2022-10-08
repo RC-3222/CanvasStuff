@@ -1,0 +1,34 @@
+@forward "base";
+@forward "button";
+
+
+.app {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.canvas-cont {
+  position: absolute;
+  inset: 0;
+
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#canvas1 {
+  background-color: black;
+  filter: blur(9px) contrast(5);
+  //position: absolute;
+  //top: 0%;
+  //left: 0%;
+
+  //background-color: black;
+}

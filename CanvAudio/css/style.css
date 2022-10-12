@@ -1,0 +1,55 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/*.canvas-cont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#canvas1 {
+  width: 80vmin;
+  height: 80vmin;
+
+  overflow: hidden;
+  border-radius: 4rem;
+
+  outline: min(2rem, 3vw) solid white;
+  background-color: black;
+}*/
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3em;
+  background-color: hsl(0deg, 70%, 30%);
+}
+
+.canvas-cont {
+  width: 80vmin;
+  height: 80vmin;
+  overflow: hidden;
+  border-radius: 4rem;
+  outline: min(2rem, 3vw) solid white;
+  background-color: black;
+}
+
+#canvas1 {
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
